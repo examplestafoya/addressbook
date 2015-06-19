@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+		span
+		{
+			opacity: 1;
+			transition: all 0.7s;
+			color:blue;
+		}
+		.hide
+		{
+			opacity: 0;
+		}
+		b{
+			color:red;
+		}
+		h1{
+			color:white;
+			background-color: black;
+			text-transform: uppercase;
+		}
+		
+	</style>
+	<h1> carnet d'adresses </h1>
+	<h2 id="nombrecontacts"> nombre </h2>
+	<p id="list">Contacts:</p>
+	<select id="civilite">
+  	<option value="Mr">Monsieur</option>
+  	<option value="Mme">Madame</option>
+  	<option value="Mlle">Mademoiselle</option>
+	</select>
+
+	<br>
+	Nom: <input type="text" id="nom" value="">
+	<br>
+	Prénom: <input type="text" id="prenom" value="">
+	<br>
+	Adresse: <input type="text" id="adresse" value="">
+	<br>
+	Tel: <input type="text" id="tel" value="">
+	<br>
+
+
+	<button id="valider"> ajouter </button>
+	<button id="supprimerChecked"> supprimer les contacts selectionés </button>
+	<button id="supprimer"> supprimer tous les contacts </button>
+	<br>
+	<h3 id="alert"></h3>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
